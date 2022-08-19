@@ -28,4 +28,8 @@ return require('packer').startup(function(use)
 	use {'hrsh7th/vim-vsnip'}
 	-- golang
 	use {'fatih/vim-go'}
+	-- hydra
+	use {'anuvyklack/hydra.nvim'}
+	use {'mbbill/undotree'}
+	use {'chentoast/marks.nvim'}
 end)
