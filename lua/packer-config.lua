@@ -17,4 +17,15 @@ return require('packer').startup(function(use)
 	} 
 	use {'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 	use { "nvim-telescope/telescope-file-browser.nvim" }
+	-- nvim cmp
+	use {'neovim/nvim-lspconfig'}
+	use {'hrsh7th/cmp-nvim-lsp'}
+	use {'hrsh7th/cmp-buffer'}
+	use {'hrsh7th/cmp-path'}
+	use {'hrsh7th/cmp-cmdline'}
+	use {'hrsh7th/nvim-cmp'}
+	use {'hrsh7th/cmp-vsnip'}
+	use {'hrsh7th/vim-vsnip'}
+	-- golang
+	use {'fatih/vim-go'}
 end)
