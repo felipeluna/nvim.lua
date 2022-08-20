@@ -1,6 +1,6 @@
 return require('packer').startup(function(use)
 	-- colorscheme
-	use {'gruvbox-community/gruvbox'}
+	use {'gruvbox-community/gruvbox', config = function() vim.cmd('colorscheme gruvbox') end}
 	-- Packer can manage itself
 	use {'wbthomason/packer.nvim'}
 	-- which key
@@ -30,6 +30,7 @@ return require('packer').startup(function(use)
 	use {'hrsh7th/vim-vsnip'}
 	use {'onsails/lspkind.nvim'}
 	use { "williamboman/mason.nvim" }
+	use { "WhoIsSethDaniel/mason-tool-installer.nvim"}  
 	-- golang
 	use {'fatih/vim-go'}
 	-- hydra

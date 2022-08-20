@@ -1,8 +1,7 @@
--- basic
 vim.g.mapleader = ' '
 local map = vim.api.nvim_set_keymap
 map('i', 'fd', '<ESC>', { noremap = true, silent = true})
-map('n', '<leader><leader>', ':', { noremap = true, silent  = false})
+map('n', '<leader><leader>', ':Telescope commands<cr>', { noremap = true, silent  = false})
 -- which key
 -- local wk = require("which-key")
 -- local mappings = { 
@@ -32,5 +31,8 @@ wk.register({
 		p = {"<cmd>bp<cr>", "go to previous buffer"},
 		n = {"<cmd>bn<cr>", "go to next buffer"},
 	},
-	f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
+	f = { "<cmd>Telescope file_browser<cr>", "Find File" },
+	j = {
+		e = {"<cmd>Telescope file_browser<cr>", "Find file" }
+	}
 }, { prefix = "<leader>" })

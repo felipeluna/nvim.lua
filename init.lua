@@ -1,5 +1,6 @@
 require('default-config')
 require('packer-config')
+require('mason-config')
 require('keys-config')
 require('treesitter-config')
 require('autopairs-config')
