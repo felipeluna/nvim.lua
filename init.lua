@@ -1,3 +1,4 @@
+require('default-config')
 require('packer-config')
 require('keys-config')
 require('treesitter-config')
